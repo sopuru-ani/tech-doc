@@ -1,13 +1,14 @@
-html {
+html * {
     box-sizing: border-box;
     scroll-behavior: smooth;
     line-height: 25px;
   }
   body {
+    width: 100%;
     margin: 0;
     font-family: Calibri;
     padding-bottom: 10px;
-    padding-right: 50px;
+    /* padding-right: 50px; */
   }
   header {
     font-weight: bold;
@@ -21,11 +22,13 @@ html {
   }
   #mainpage {
     position: relative;
-    left: 350px;
-    width: calc(100% - 350px);
+    left: 300px;
+    width: calc(100% - 400px);
+    margin: 0 50px;
   
   }
   #navbar {
+    background-color: rgb(242, 242, 242);
     width: 300px;
     border-right: 3px solid grey;
     /* height: calc(100vh - 5px); */
@@ -34,12 +37,14 @@ html {
     position: fixed;
   }
   #sidebar {
+    background-color: white;
     overflow: auto;
     width: 100%;
     height: calc(100% - 80px);
   }
   .nav-link {
-    width: calc(100% - 9px);
+    /* width: calc(100% - 9px); */
+    width: 100%;
     height: 50px;
     border-top: 1px solid black;
     display: inline-block;
@@ -69,6 +74,8 @@ html {
     #main-doc {
       display: flex;
       flex-direction: column;
+      /* margin-left: auto;
+      margin-right: auto; */
     }
     #navbar {
       width: calc(100vw - 17px);
@@ -86,14 +93,10 @@ html {
     #mainpage {
       display: block;
       width: calc(100% - 20px);
-      position: relative;
-      right: unset;
-      left: unset;
+      position: unset;
       /* margin-left: 40px;
-      padding-right: 10px; */
-      /* margin-right: 10px;
-      margin-left: 10px; */
-      margin: 0 auto;
+      margin-right: 20px; */
+      margin-left: 10px;
     }
     #title-heading {
       text-align: center;
