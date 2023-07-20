@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 25px;
+  }
+  body {
+    margin: 0;
+    font-family: Calibri;
+    padding-bottom: 10px;
+    padding-right: 50px;
+  }
+  header {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 20px;
+    margin-left: -10px;
+  }
+  #main-doc {
+    display: flex;
+    flex-direction: row;
+  }
+  #mainpage {
+    position: relative;
+    left: 350px;
+    width: calc(100% - 350px);
+  
+  }
+  #navbar {
+    width: 300px;
+    border-right: 3px solid grey;
+    /* height: calc(100vh - 5px); */
+    height: 100vh;
+    padding-bottom: 5px;
+    position: fixed;
+  }
+  #sidebar {
+    overflow: auto;
+    width: 100%;
+    height: calc(100% - 80px);
+  }
+  .nav-link {
+    width: calc(100% - 9px);
+    height: 50px;
+    border-top: 1px solid black;
+    display: inline-block;
+    padding-left: 9px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+  }
+  .nav-link:active, .nav-link:visited {
+    text-decoration: none;
+    color: black;
+  }
+  #title-heading {
+    padding-left: 9px;
+    margin: 20px;
+    margin-left: 0;
+  }
+  code {
+    border-radius: 4px;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    line-height: 30px;
+  }
+  @media (max-width: 600px) {
+    #main-doc {
+      display: flex;
+      flex-direction: column;
+    }
+    #navbar {
+      width: calc(100vw - 17px);
+      height: 200px;
+      display: inline-block;
+      position: unset;
+      overflow: hidden;
+      border: none;
+    }
+    #sidebar {
+      
+      border: 2px solid black;
+      width: 100%;
+    }
+    #mainpage {
+      display: block;
+      width: calc(100% - 20px);
+      position: relative;
+      right: unset;
+      left: unset;
+      /* margin-left: 40px;
+      padding-right: 10px; */
+      /* margin-right: 10px;
+      margin-left: 10px; */
+      margin: 0 auto;
+    }
+    #title-heading {
+      text-align: center;
+    }
+    header {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  }
+  
